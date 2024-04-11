@@ -28,7 +28,9 @@ div{
 
 div:hover img{
     display: inline;
+    background-image: url(./imagenes/exposion.gif);
 }
+
 
 img {
     width: 200px;
