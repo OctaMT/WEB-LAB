@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    display: inline-block;
+    margin: 50px 50px;
+}
+
+.cuadrado {
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    transition: all 1.5s;
+}
+
+.cuadrado:hover {
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg) scale(0.5);
+}
+
+.cuadrado:hover~.circulo {
+    transform: translate(100px);
+}
+
+.cuadrado:hover~.coso {
+    background-color: rgb(70, 213, 213);
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background:  rgb(188, 0, 0);
+    border-radius: 50%;
+    transition: all 1.5s;
+}
+
+.circulo:hover {
+    background: url(../imagenes/1Y9m.gif);
+    background-size: cover;
+    transform: scale(3) scaleX(1.5);
+}
+
+.coso {
+    clip-path: polygon(51.87% 34.98%, 52.47% 71.66%, 100% 34.2%, 25% 93.3%, 99.22% 100%, 27.5% 1.5%, 25% 93.3%, 0.25% 34.2%, 84.85% 54.77%, 100% 34.2%);
+    background-color: #000000;
+    width: 100px;
+    height: 100px;
+}
+
+.coso:hover {
+    background-image: url(../imagenes/octa\ gif\ coso.gif );
+    transition: all 1.5s;
+    background-size: cover;
+}
+
+img{
+    position: relative;
+    top: 100px;
+    animation: fantasma 2s infinite ;
+}
+
+@keyframes fantasma {
+        0% , 100%{ 
+            opacity: 0;
+        }
+        25%{
+            transform: translateY(-40px);
+            opacity: 1;
+        }
+    }

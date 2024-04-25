@@ -1,34 +1,53 @@
 body {
-    background-image: url("./imagenes/bg.gif");
+    background-image: url("./imagenes/fondodebbikini.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 h1 {
-
     font-size: 70px;
     text-align: center;
     font-family: 'arial', Times, serif;
-    color: rgb(80, 2, 183);
-    text-shadow: 2px 2px 0px rgb(255, 255, 255);
+    color: rgb(238, 219, 7);
     display: inline;
+    -webkit-text-stroke: 1.5px rgb(31, 72, 219);
 }
 
-div{
+.small{
+    font-size: 40px;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(15, 170, 198);
+    width: 200px;
+    padding: 4px 8px;
+    text-align: center;
+    margin: 4px;
+}
+
+
+
+
+.papu{
    height: 200px;
    align-content: end;
    display: flex;
+   justify-content: center;
 }
 
-div:hover img{
+.papu:hover img{
     display: inline;
-    background-image: url(./imagenes/exposion.gif);
+    background-image: url(./imagenes/explosionepica.gif);
+    background-size: cover;
 }
 
 
