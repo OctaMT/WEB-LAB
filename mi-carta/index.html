@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <h1>HOLA SOY OCTAVIO</h1> 
-<H2>Tengo 12 años</H2> 
-<hr>
-<h3>me gusta ver youtube</h3>
-<h3>mi youtuber favorito es Spreen</h3> 
-<button>Spreen</button>
-<br>
-<br> 
-<img src="https://i.pinimg.com/originals/5b/75/61/5b756100a55ab0c21cbbdbd7cca0b6c6.gif" alt="">
-    <script type="module" src="script.js"></script>
-  </body>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<style>
+  .avatar{
+  width: 120px;
+  height: 200px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  transition: all 300ms;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.avatar img{
+    transform: scale(1.1);
+}
+  body{
+    background-color:rgb(58, 176, 230);
+    }
+    
+</style>
+
+<body>
+  <h1>HOLA SOY OCTAVIO</h1>
+  <H2>Tengo 12 años</H2>
+  <hr>
+  <h3>me gusta ver youtube</h3>
+  <h3>mi youtuber favorito es Spreen</h3>
+  <button class="bs">Spreen</button>
+  <br>
+  <br>
+  <img src="../imagenes/1gifdespreencard.gif" alt="">
+  <script type="module" src="script.js"></script>
+</body>
+      <!--Avatar -->
+      <a href="../index.html" class="avatar">
+        <img src="../imagenes/avatar.gif" alt="mi Avatar">
+    </a>
 </html>

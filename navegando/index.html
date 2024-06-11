@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navegando</title>
 </head>
+<style>
+    body {
+        background-image: url(../imagenes/3barco.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 200px;
+        overflow: hidden;
+        display: grid;
+        place-content: center;
+        transition: all 300ms;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999999;
+
+        cursor: pointer;
+        object-fit: contain;
+    }
+
+    .avatar img {
+        transform: scale(1.1);
+    }
+</style>
+<!--Avatar -->
+<a href="../index.html" class="avatar">
+    <img src="../imagenes/avatar.gif" alt="mi Avatar">
+</a>
+
 <body>
     <h1>NAVEGAMOS</h1>
-<a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-    <button>bueno dias</button>
-</a>
-<a href="./inicio.html"><button>inicio</button></a>
+    <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <button>bueno dias</button>
+    </a>
+    <a href="./inicio.html"><button>inicio</button></a>
 </body>
+
 </html>

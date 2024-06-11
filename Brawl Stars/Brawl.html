@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Brawl Stars</title>
+    <!--Avatar -->
+    <a href="../index.html" class="avatar">
+        <img src="../imagenes/avatar.gif" alt="mi Avatar">
+    </a>
+    <style>
+        .avatar{
+  width: 120px;
+  height: 200px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  transition: all 300ms;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.avatar img{
+    transform: scale(1.1);
+}
+        body{
+            background-image: url(../imagenes/fondoparlapaginadeaudios.jpg);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        h1{
+            font-size: 80px;
+         -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+        }
+        img{
+            filter: drop-shadow(5px 5px 10px white);
+        }
+    </style>
+</head>
+<body>
+    <h1>BRAWL STARS</h1>
+    
+    <div>
+        <img onclick="playAudio('../audios/primo.ogg')" height="300" src="../imagenes/El_Primo_Skin-Default.webp">
+        <img onclick="playAudio('../audios/crow.ogg')" height="300" src="../imagenes/Crow.webp">
+        <img  onclick="playAudio('../audios/meca.ogg')" height="350" src="../imagenes/Crow_Skin-Meca-Negro.webp">
+    </div>
+</body>
+<script>
+function playAudio(ubicacion_audio) {
+  const audio = new Audio(ubicacion_audio)
+  audio.play()
+}
+</script>
+</html>

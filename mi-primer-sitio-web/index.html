@@ -3,11 +3,54 @@
   <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
   </head>
+  <style>
+    .avatar{
+  width: 120px;
+  height: 200px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  transition: all 300ms;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.avatar img{
+    transform: scale(1.1);
+}
+    body{
+      background-image: url(../imagenes/setupspreen.jpg);
+    background-size: cover;
+    }
+    h1{
+      background-color: aliceblue;
+      display: inline;
+    }
+    .ivan{
+      background-color: rgb(44, 216, 150);
+      border: 2px white solid;
+      
+    }
+    .Logo{
+        background-image: url(../imagenes/bg.gif);
+      }
+  </style>
   <body>
     <h1>SPREEN</h1> 
-<img src="https://static.wikia.nocookie.net/youtubepedia/images/a/a9/SpreenDMC_Icono.jpg/revision/latest?cb=20200810234832&path-prefix=es" alt="" width="100"> 
-<img src="https://i.pinimg.com/736x/2e/fb/90/2efb90806af564fc9afbcf3c646a61f8.jpg" width="200" alt="">
-
+    <br>
+    <br>
+    <img class="Logo spreen" src="../imagenes/spreenlogo.png" alt="" width="100"> 
+    <br>
+    <img class="ivan" src="../imagenes/spreen.jpg" width="200" alt="">
+    <!--Avatar -->
+    <a href="../index.html" class="avatar">
+      <img src="../imagenes/avatar.gif" alt="mi Avatar">
+  </a>
 
     <script type="module" src="script.js"></script>
   </body>
